@@ -8,6 +8,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
   	contentBase: './dist',
+    watchContentBase: true,
   	hot: true
   },
   plugins: [
@@ -21,11 +22,29 @@ module.exports = {
   module: {
     rules: [
        {
-         test: /\.css$/,
-         use: [
-           'style-loader',
-           'css-loader'
-         ]
+         test: /\.(scss)$/,
+         use: [{
+                loader: "style-loader"
+            }, 
+            {
+                loader: "css-loader"
+            },
+            {
+                loader: "postcss-loader",
+                options: {
+                  plugins: function () {
+                    return [
+                      require('autoprefixer')
+                    ];
+                  }
+                }
+            },
+            {
+                loader: "sass-loader",
+                options: {
+                    includePaths: ["absolute/path/a", "absolute/path/b"]
+                }
+            }]
        }
      ]
    }
