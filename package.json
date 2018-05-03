@@ -1,0 +1,27 @@
+{
+  "name": "timophey",
+  "version": "1.0.0",
+  "description": "web-page for my friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasbukreev/timophey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasbukreev/timophey/issues"
+  },
+  "homepage": "https://github.com/eliasbukreev/timophey#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
+}
