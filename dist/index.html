@@ -3,37 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
 	<title>Document</title>
 </head>
 <body>
-	<header>
-	<div class="container text-center">
-		<h1>Ремонт компьютеров</h1>
-		<h3>Качественный ремонт компьютерной техники во Владивостоке</h3>
-	</div>
+	<header id="header">
 	</header>
+
+	<div class="subheader">
+	<div class="subheader__map" id="map">
+	<div class="subheader__text text-center">
+	<h3>Ремонт компьютерной техники во <u>Владивостоке</u></h3>
+	</div>
+	</div>
+	</div>
+
 	<div class="main container">
 		<div class="row">
-			<div class="col-md-4 text-center">
-				<div class="main__button"><a href="" class="main__link btn btn-primary">
-					номер телефона и ватсап
+			<div class="col-lg-8 col-md-7 text-center">
+				<div class="main__button"><a href="form.html" class="main__link btn btn-primary">
+					Оформить заявку на выезд мастера
 				</a></div>
 			</div>
-			<div class="col-md-4 text-center">
-				<div class="main__button"><a href="" class="main__link btn btn-primary">
-					оставить заявку
-				</a></div>
-			</div>
-			<div class="col-md-4 text-center">
-				<div class="main__button"><a href="" class="main__link btn btn-primary">
-					прочитать отзывы
+			<div class="col-lg-4 col-md-5 text-center">
+				<div class="main__button"><a href="comments.html" class="main__link btn btn-primary">
+					Прочитать отзывы
 				</a></div>
 			</div>
 		</div>
 	</div>
 	<div class="desc container">
 		<div class="desc__head text-center">
-			<h4>Предоставляемые услуги</h4>
+			<h2>Предоставляемые услуги</h2>
 		</div>
 		<div class="desc__main">
 			<div class="row desc__row">
@@ -96,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	<footer>
+	<footer id="footer">
 	</footer>
 </body>
 <script src="main.js"></script>	
