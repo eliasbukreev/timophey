@@ -9,7 +9,44 @@
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/buttons";
 
-body {
-	background-color: red;
+.text-center {
+	text-align: center;
+}
+
+header {
+	padding-top: 1em;
+}
+
+header, .main, .desc {
+	padding-bottom: 2em;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+.main__button {
+	padding: 1.5em;
+}
+
+.main__link {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.icon {
+	width: 100px;
+	height: 100px
+}
+
+.icon-2 {
+	fill: blue;
+}
+
+.desc__row {
+	padding-top: 2em;
 }

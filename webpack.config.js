@@ -45,7 +45,24 @@ module.exports = {
                     includePaths: ["absolute/path/a", "absolute/path/b"]
                 }
             }]
-       }
+       },
+       {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            {
+                loader: 'file-loader',
+                options: {
+                name: '[name].[ext]',
+            }
+            }
+          ]
+       },
+       {
+          test: /\.(woff|woff2|eot|ttf|otf)$/,
+          use: [
+            'file-loader'
+          ]
+        }
      ]
-   }
+  }
 };
