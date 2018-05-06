@@ -26,6 +26,7 @@
     "cssnano": "^3.10.0",
     "exports-loader": "^0.7.0",
     "file-loader": "^1.1.11",
+    "jquery": "^3.3.1",
     "node-sass": "^4.9.0",
     "open-iconic": "^1.1.1",
     "postcss-cssnext": "^3.1.0",
@@ -40,7 +41,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   }
 }

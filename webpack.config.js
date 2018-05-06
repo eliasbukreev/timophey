@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-  	app: './src/index.js'
+  	app: './src/index.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -12,6 +12,11 @@ module.exports = {
   	hot: true
   },
   plugins: [
+    new webpack.ProvidePlugin({
+    $: "../node_modules/jquery/dist/jquery.min.js",
+    jQuery: "../node_modules/jquery/dist/jquery.min.js",
+    "window.jQuery": "../node_modules/jquery/dist/jquery.min.js"
+      }),
   	new webpack.NamedModulesPlugin(),
   	new webpack.HotModuleReplacementPlugin()
   ],

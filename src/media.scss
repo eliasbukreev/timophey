@@ -1,0 +1,38 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+@media (max-width: $breakpoint-tablet) {
+  
+	.header__logo{
+	align-items: center;
+	align-content: center;
+	justify-content: center;		
+	}	
+
+	.header__number {
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	}
+
+	.main__link{
+		font-size: 1em;
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+  
+	.header__text{	
+		font-size: 1.5em;
+	}	
+
+	.subheader__text h3 {
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 1.5em;
+	}
+
+	.main__link{
+		font-size: 0.7em;
+	}
+}
