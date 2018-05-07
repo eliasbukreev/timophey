@@ -13,15 +13,16 @@
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/custom-forms";
 
+//Fonts
+@import "./font-face.scss";
+
+
 .text-center {
 	text-align: center;
 }
 
-header {
-	padding-top: 1em;
-}
 
-header, .main, .desc, .subheader {
+.main, .desc, .subheader {
 	margin-bottom: 3em;
 }
 
@@ -50,8 +51,14 @@ h1 {
 }
 
 .header__logo {
+   a {
 	display: flex;
 	align-items: center;
+	color: black;
+	}
+	a:hover{
+	text-decoration: none;
+	}
 }
 
 .header__logo-img {
@@ -62,18 +69,33 @@ h1 {
 
 .header__text {
 	display: inline-block;
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 400;
 	margin-bottom: 0px;
+	strong {
+		font-weight: 400;
+		font-size: 1.5em;
+		font-family: 'bebasNeueBold';
+	}
 }
 
 .header__number {
 	display: flex;
-	align-items: center;
 	align-content: flex-start;
-	justify-content: flex-end;
-  svg {
-	padding-right : 15px;
+	justify-content: center;
+	flex-direction: column;
+  a{
+  	display: flex;
+  	align-items: center;
+  	justify-content: flex-start;
+	svg {
+	}
+	}
+  p {
+		margin: 16px 0px 0px 5px;
+		font-weight: 600;
+	font-size: 0.9em; 
+	letter-spacing: 1px;
 	}
 }
 
@@ -100,6 +122,9 @@ b {
 	right: 0px;
 	bottom: 0px;
 	z-index: -1;
+	background-image: url(computer-repair.jpg);
+	background-size: cover;
+	background-position: bottom;
 }
 
 .subheader__text {
@@ -110,17 +135,17 @@ b {
 	bottom: 0px;
 	z-index: 1;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	background-color: rgba(38, 166, 154, 0.6);
 	color: white;
-}
-
-.subheader__text h3 {
+	h3 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 700;
 	font-size: 2.5em;
+	}
 }
 
 
@@ -181,12 +206,6 @@ footer {
 
 .subheader__text-pages {
 	font-size: 0.7em;
-}
-
-.subheader__map-pages {
-	background-image: url(computer-repair.jpg);
-	background-size: cover;
-	background-position: bottom;
 }
 
 

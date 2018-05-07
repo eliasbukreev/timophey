@@ -3,7 +3,7 @@ $breakpoint-mobile: 480px;
 
 @media (max-width: $breakpoint-tablet) {
   
-	.header__logo{
+	.header__logo a{
 	align-items: center;
 	align-content: center;
 	justify-content: center;		
@@ -17,6 +17,10 @@ $breakpoint-mobile: 480px;
 
 	.main__link{
 		font-size: 1em;
+	}
+
+	header {
+		margin-bottom: 2em;
 	}
 }
 
@@ -32,7 +36,12 @@ $breakpoint-mobile: 480px;
 	font-size: 1.5em;
 	}
 
+	.subheader {
+	height: 200px;
+	position: relative;
+	}
+
 	.main__link{
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 }
