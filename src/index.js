@@ -14,18 +14,5 @@ $("#header").load("header.html");
 $("#footer").load("footer.html");
 };
 HTMLReady();
-
-(function(){ 
-	ymaps.ready(init);
-    var myMap;
-
-    function init(){     
-        myMap = new ymaps.Map("map", {
-            center: [43.11654608, 131.91677168],
-            zoom: 14,
-            controls: []
-        });
-    }
-})();
 	
 });
