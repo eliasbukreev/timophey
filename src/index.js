@@ -3,6 +3,7 @@ import './media.scss';
 import '../node_modules/open-iconic/sprite/open-iconic.svg';
 import './computer-support.svg';
 import './computer-repair.jpg';
+import './favicon.ico'
 
 
 
