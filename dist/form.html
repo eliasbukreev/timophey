@@ -16,31 +16,41 @@
 	</div>
 	</div>
 	<div class="form__main container">
-		<form>
+		<form novalidate class="needs-validation" id="contact-form" method="post" action="contact.php" role="form">
+		<div class="messages"></div>
   		<div class="form-group">
     	<label for="formGroupName">Ваше имя *</label>
-    	<input type="text" class="form-control" id="formGroupName" placeholder="Ваше имя">
+    	<input type="text" name="name" class="form-control" id="formGroupName" placeholder="Ваше имя" required>
+    	<div class="invalid-feedback">
+          Пожалуйста, введите ваше имя.
+        </div>
   		</div>
   		<div class="form-group">
     	<label for="formGroupPhoneNumber">Ваш номер телефона *</label>
-    	<input type="text" class="form-control" id="formGroupPhoneNumber" placeholder="Ваш номер телефона">
+    	<input type="tel" name="phone" class="form-control" id="formGroupPhoneNumber" placeholder="Ваш номер телефона" pattern="(\+?\d[- .]*){7,13}" required>
+    	<div class="invalid-feedback">
+        Пожалуйста, введите номер телефона (только числа).
+        </div>
   		</div>
   		<div class="form-group">
   		<label class="mr-sm-2" for="inlineFormCustomSelect">Выберите тип проблемы *</label>
-        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-        <option selected>Моя проблема...</option>
+        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="problem" id="inlineFormCustomSelect" required>
+        <option value="">Моя проблема...</option>
         <option value="1">Не запускается компьютер</option>
         <option value="2">Не запускается компьютер2</option>
         <option value="3">Не запускается компьютер3</option>
         </select>
+        <div class="invalid-feedback">
+        Пожалуйста, выберите ваш тип проблемы. 
+        </div>
   		</div>
   		<div class="form-group">
     	<label for="exampleTextarea">Дополнительные комментарии</label>
-    	<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    	<textarea class="form-control" id="exampleTextarea" rows="3" name="message"></textarea>
   		</div>
 		<input type="submit" class="btn btn-primary btn-send" value="Заказать обратный звонок">
         <p class="text-muted">
-        <span>* Необходимые к заполнению поля</span>
+        * Необходимые к заполнению поля
         </p>
 
 		</form>

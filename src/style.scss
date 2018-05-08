@@ -12,6 +12,7 @@
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/alert";
 
 //Fonts
 @import "./font-face.scss";
@@ -173,6 +174,7 @@ footer {
 
 .footer__lastcolumn {
 	a{
+		display: block;
 		font-weight: 400;
 		font-size: 1em;
 	}
@@ -209,4 +211,5 @@ footer {
 }
 
 
-@import "./style__comments.scss"
+@import "./style__comments.scss";
+@import "./style__form.scss"

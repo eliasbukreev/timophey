@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-  	app: './src/index.js',
+  	app: './src/index.js'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -21,7 +21,7 @@ module.exports = {
   	new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    filename: 'main.js',
+    filename: 'main.js?v=1.1',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -67,7 +67,7 @@ module.exports = {
           use: [
             'file-loader'
           ]
-        }
+        },
      ]
   }
 };

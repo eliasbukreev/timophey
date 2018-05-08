@@ -1,20 +1,9 @@
-import './style.scss';
-import './media.scss';
-import '../node_modules/open-iconic/sprite/open-iconic.svg';
-import './computer-support.svg';
-import './computer-repair.jpg';
-import './favicon.ico';
+$(function () {
 
-jQuery(document).ready(function($){
+    // init the validator
+    // validator files are included in the download package
+    // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-
-function HTMLReady (){
-$("#header").load("header.html");
-$("#footer").load("footer.html");
-};
-HTMLReady();
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -26,15 +15,14 @@ HTMLReady();
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-          formAjaxSent();
         }
         form.classList.add('was-validated');
       }, false);
     });
   }, false);
-})(); 
+})();
 
-function formAjaxSent (){
+
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
 
@@ -61,18 +49,13 @@ function formAjaxSent (){
                     // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
                         // inject the alert to .messages div in our form
-                        var contactForm = $('#contact-form'); 
-                        contactForm.find('.messages').html(alertBox);
+                        $('#contact-form').find('.messages').html(alertBox);
                         // empty the form
-                        contactForm[0].reset();
-                        if (contactForm.hasClass('was-validated')) {
-                            contactForm.removeClass('was-validated');
-                        }
+                        $('#contact-form')[0].reset();
                     }
                 }
             });
             return false;
         }
-    })};
-	
+    })
 });
