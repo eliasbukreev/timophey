@@ -3,7 +3,66 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Document</title>
+	<title>TechnoComp – Ремонт Компьютеров и Ноутбуков (Владивосток)</title>
+	<script>
+/* This code goes ABOVE the main HTML Comment Box code!
+ replace the text in the single quotes below to customize labels.*/
+hcb_user = {
+    /* L10N */
+    comments_header : 'Отзывы',
+    name_label : 'Ваше имя',
+    content_label: 'Текст',
+    submit : 'Отправить',
+    input_file : 'Прикрепить изображение',
+    logout_link : '<img title="log out" src="//www.htmlcommentbox.com/static/images/door_out.png" alt="[logout]" class="hcb-icon"/>',
+    admin_link : '<img src="//www.htmlcommentbox.com/static/images/door_in.png" alt="[login]" class="hcb-icon"/>',
+    no_comments_msg: 'Оставьте первый отзыв!',
+    add:'Добавить отзыв',
+    again: 'Оставить еще один отзыв',
+    rss:'',
+    said:':',
+    prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+    next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+    showing:'Showing',
+    to:'to',
+    website_label:'website (optional)',
+    email_label:'email',
+    anonymous:'Аноним',
+    mod_label:'(mod)',
+    subscribe:'отправлять на почту отзывы',
+    are_you_sure:'Пожаловаться на этот отзыв?',
+
+    reply:'<img src="//www.htmlcommentbox.com/static/images/reply.png"/> Ответить',
+    flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> Пожаловаться',
+    like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> Понравилось',
+
+    /* dates */
+    days_ago:'дней назад',
+    hours_ago:'часов назад',
+    minutes_ago:'минут назад',
+    within_the_last_minute:'сейчас',
+
+    msg_thankyou:'Спасибо за ваш отзыв!',
+    msg_approval:'(Отзыв будет добавлен после его одобрения модератором)',
+    msg_approval_required:'Спасибо за ваш отзыв! Отзыв будет добавлен после его одобрения модератором.',
+
+    err_bad_html:'Ваш отзыв содержит недопустимый HTML.',
+    err_bad_email:'Пожалуйста, введите действительный почтовый адрес.',
+    err_too_frequent:'Пожалуйста, подождите несколько секунд перед следующим комментарием.',
+    err_comment_empty:'Пустой отзыв!',
+    err_denied:'Ваш отзыв отклонен.',
+
+    /* SETTINGS */
+    MAX_CHARS: 8192,
+    PAGE:'', /* ID of the webpage to show comments for. defaults to the webpage the user is currently visiting. */
+    ON_COMMENT: function(){}, /* Function to call after commenting. */
+    RELATIVE_DATES:true /* show dates in the form "X hours ago." etc. */
+};
+
+</script>
+ <style type="text/css">
+
+  </style>
 </head>
 <body>
 	<header id="header">
@@ -16,60 +75,29 @@
 	</div>
 	</div>
 
+
 	<div class="comments__main container">
 		<div class="row">
-			<div class="col-md-1">
-				<svg viewBox="0 0 8 8" class="icon comments__icon">
-  				<use xlink:href="open-iconic.svg#person" class="icon-2"></use>
-				</svg>
-			</div>
-			<div class="col-md-11">
-				<p><span class="comments__author">Василий Пупкин</span><span class="comments__time">06.05.2018</span></p>
-				<p class="comment__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-				<div class="row">
-			<div class="col-md-1">
-				<svg viewBox="0 0 8 8" class="icon comments__icon">
-  				<use xlink:href="open-iconic.svg#person" class="icon-2"></use>
-				</svg>
-			</div>
-			<div class="col-md-11">
-				<p><span class="comments__author">Василий Пупкин</span><span class="comments__time">06.05.2018</span></p>
-				<p class="comment__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-				<div class="row">
-			<div class="col-md-1">
-				<svg viewBox="0 0 8 8" class="icon comments__icon">
-  				<use xlink:href="open-iconic.svg#person" class="icon-2"></use>
-				</svg>
-			</div>
-			<div class="col-md-11">
-				<p><span class="comments__author">Василий Пупкин</span><span class="comments__time">06.05.2018</span></p>
-				<p class="comment__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
+			<div class="col-lg-6">
 
-		<div class="row">
-		<div class="col-lg-4">
-		<form>
-		<legend>Оcтавить комментарий</legend>
-  		<div class="form-group">
-    	<label for="formGroupName">Ваше имя</label>
-    	<input type="text" class="form-control" id="formGroupName" placeholder="Ваше имя">
-  		</div>
-  		<div class="form-group">
-    	<label for="exampleTextarea">Ваш Комментарий</label>
-    	<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  		</div>
-		<input type="submit" class="btn btn-primary btn-send" value="Отправить сообщение">
-		</form>
-		</div>
-		</div>
+		<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%244X4ArpGDooRwMPSlN6Gqd%2F"+"&opts=16862&num=10&ts=1525921725034");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); 
+	window.addEventListener('load', function () {
+     document.getElementById('hcb_form').getElementsByTagName('label')[0].getElementsByTagName('a')[0].innerHTML = 'Прикрепить изображение';
+});
+
+ /*-->*/ </script>
+
+<!-- end www.htmlcommentbox.com -->
+	
+	</div>
+	</div>
 	</div>
 	<footer id="footer">
 	</footer>
 </body>
-<script src="main.js"></script>	
+<script src="main.js?v=1.12"></script>	
+
 </html>

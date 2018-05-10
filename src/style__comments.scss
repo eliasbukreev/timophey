@@ -1,19 +1,20 @@
-.comments__author {
+.author-name {
   font-weight: bold;
   font-size: 16px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: $cyan;
 }
 
-.comments__time {
+.date {
   font-style: italic;
   font-size: 11px;
   margin-left: 10px;
   color: #888888;
 }
 
-.comment__content {
-  padding-bottom: 30px;
+.comment {
+  background-color: $light; 
+  margin-bottom: 30px;
 }
 
 .comments__icon {

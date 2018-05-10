@@ -14,8 +14,11 @@ $("#footer").load("footer.html");
 };
 HTMLReady();
 
+
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
+
+    (function() {
   'use strict';
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -26,7 +29,6 @@ HTMLReady();
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-          formAjaxSent();
         }
         form.classList.add('was-validated');
       }, false);
@@ -34,14 +36,17 @@ HTMLReady();
   }, false);
 })(); 
 
-function formAjaxSent (){
+
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
 
         // if the validator does not prevent form submit
-        if (!e.isDefaultPrevented()) {
-            var url = "contact.php";
 
+
+
+       if ($('#contact-form')[0].checkValidity()) {
+
+            var url = "contact.php";
             // POST values in the background the the script URL
             $.ajax({
                 type: "POST",
@@ -73,6 +78,5 @@ function formAjaxSent (){
             });
             return false;
         }
-    })};
-	
+    });	
 });

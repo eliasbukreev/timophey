@@ -21,7 +21,7 @@ module.exports = {
   	new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    filename: 'main.js?v=1.1',
+    filename: 'main.js?v=1.12',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
