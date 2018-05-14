@@ -11,10 +11,13 @@
 	<div class="subheader subheader__pages">
 	<div class="subheader__map subheader__map-pages">
 	<div class="subheader__text subheader__text-pages text-center">
-	<h3>Оформить обратный <u>звонок мастера</u> на ваш номер телефона</h3>
+	<h3 class="subheader__text-slide-1">Оформить обратный <u>звонок мастера</u> на ваш номер телефона</h3>
+	<h3 class="subheader__text-slide-2">Выезд мастера и диагностика бесплатно!</h3>
+	<h3 class="subheader__text-slide-3">Опытные специалисты помогут вам! </h3>
 	</div>
 	</div>
 	</div>
+	<div class="main__background main__background-form">	
 	<div class="form__main container">
 		<form novalidate class="needs-validation" id="contact-form" method="post" action="contact.php" role="form">
 		<div class="messages"></div>
@@ -33,16 +36,21 @@
         </div>
   		</div>
   		<div class="form-group">
-  		<label class="mr-sm-2" for="inlineFormCustomSelect">Выберите тип проблемы *</label>
+  		<label class="mr-sm-2" for="inlineFormCustomSelect">Выберите вид требуемой помощи *</label>
         <select class="custom-select mb-2 mr-sm-2 mb-sm-0" name="problem" id="inlineFormCustomSelect" required>
-        <option value="">Моя проблема...</option>
-        <option value="comp">Неисправность компьютера</option>
-        <option value="notebook">Неисправность ноутбука</option>
-        <option value="Apple">Неисправность техники Apple</option>
+        <option value="">...</option>
+        <option value="Comp">Ремонт компьютера</option>
+        <option value="Notebook">Ремонт ноутбука</option>
+        <option value="Apple">Ремонт техники Apple</option>
+        <option value="Program">Установка программ</option>
+        <option value="Windows">Установка Windows</option>
+        <option value="Bugs">Удаление вирусов</option>
+        <option value="Internet">Настройка интернета</option>
+        <option value="HardDrive">Восстановление данных</option>
         <option value="Other">Другое</option>
         </select>
         <div class="invalid-feedback">
-        Пожалуйста, выберите ваш тип проблемы. 
+        Пожалуйста, выберите ваш вид помощи. 
         </div>
   		</div>
   		<div class="form-group">
@@ -56,8 +64,9 @@
 
 		</form>
 	</div>
+	</div>
 	<footer id="footer">
 	</footer>
 </body>
-<script src="main.js?v=1.12"></script>
+<script src="main.js?v=1.15"></script>
 </html>

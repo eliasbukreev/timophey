@@ -13,7 +13,7 @@
 }
 
 .comment {
-  background-color: $light; 
+  background-color: white; 
   margin-bottom: 30px;
 }
 
@@ -22,4 +22,14 @@
 	height: 50px;
 	margin: 0px;
 	padding: 0px;
+}
+
+.subheader__text-pages h3 {
+	left: 50%;
+}
+
+#HCB_comment_box h3 {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-weight: 500;
 }

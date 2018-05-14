@@ -1,9 +1,31 @@
+import 'expose-loader?$!jquery';
+import 'expose-loader?jQuery!jquery';
+//import 'expose-loader?Util!bootstrap/js/dist/util';
+
 import './style.scss';
 import './media.scss';
 import '../node_modules/open-iconic/sprite/open-iconic.svg';
 import './computer-support.svg';
 import './computer-repair.jpg';
 import './favicon.ico';
+import 'bootstrap/js/src/util';
+import 'bootstrap/js/src/modal';
+import './bodytest_apple.jpg';
+import "./logo.png"
+
+//ModalImg
+import './modalCompRepair.jpg'
+import './modalNoteRepair.jpg'
+import './modalWind.jpg'
+import './modalNet.jpg'
+import './modalBugs.jpg'
+import './modalHard.jpg'
+
+
+
+
+
+
 
 jQuery(document).ready(function($){
 
@@ -11,6 +33,7 @@ jQuery(document).ready(function($){
 function HTMLReady (){
 $("#header").load("header.html");
 $("#footer").load("footer.html");
+$("#modals").load("modals.html");
 };
 HTMLReady();
 

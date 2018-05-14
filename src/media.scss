@@ -3,6 +3,11 @@ $breakpoint-mobile: 480px;
 
 @media (max-width: $breakpoint-tablet) {
   
+	.header__logo-img {
+		height: 100px;
+    	margin-bottom: 1.5em;
+	}	
+
 	.header__logo a{
 	align-items: center;
 	align-content: center;
@@ -10,17 +15,42 @@ $breakpoint-mobile: 480px;
 	}	
 
 	.header__number {
+	display: flex;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
+	flex-direction: column;
+	p {
+		text-align: center;
+	}
 	}
 
-	.main__link{
-		font-size: 1em;
+	.header__right {
+	padding: 0px 0px;
+	}
+
+	.header__number-num {
+	line-height: 0.8;
+	margin: 10px 0px 10px 0px;
+	}
+
+	.header__icon {
+	top: -100%;
+	}
+
+	.main__button{
+	font-size: 0.8rem;
+	p{
+		font-size: 1rem;
+	}
 	}
 
 	header {
 		margin-bottom: 2em;
+	}
+
+	.md-none {
+	display: none;
 	}
 }
 
@@ -41,17 +71,24 @@ $breakpoint-mobile: 480px;
 	position: relative;
 	}
 
-	.main__link{
-		font-size: 0.6em;
+	.main__button{
+	font-size: 0.6rem;
+	p{
+		font-size: 0.8rem;
 	}
+	}
+
 
 	.header__logo-img {
-	width: 100px;
+	width: auto;
 	height: 100px;
-}
-
-	.sm-none {
-		display: none;
 	}
 
+	.sm-none {
+	display: none;
+	}
+
+	.modal .modal-img {
+		width: 100%
+	}
 }

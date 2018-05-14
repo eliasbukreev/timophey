@@ -12,18 +12,23 @@
 
 	<div class="subheader">
 	<div class="subheader__map">
-	<div class="subheader__text text-center">
-	<h3>Ремонт компьютерной техники во <u>Владивостоке</u></h3>
+	<div class="subheader__text">
+	<h3 class="subheader__text-slide-1">Ремонт компьютерной техники во <u>Владивостоке!</u></h3>
+	<h3 class="subheader__text-slide-2">Ремонт Компьютеров, Ноутбуков, Моноблоков.<br>Ремонт <u>Ноутбуков</u> Acer, Asus, Dell, HP, Lenovo, MSI и других фирм.</h3>
+	<h3 class="subheader__text-slide-3">Ремонт техники <u>Apple</u>: iMac, iMac Pro, Mac mini, MacBook, MacBook Pro, MacBook Air.<br>Ремонт планшетов Ipad всех поколений.</h3> 
 	</div>
 	</div>
 	</div>
-
+	<div class="main__background">
 	<div class="main container">
 		<div class="row">
 			<div class="col-lg-8 col-md-7 text-center">
-				<div class="main__button"><a href="form.html" class="main__link btn btn-primary">
-					Оформить заявку на выезд мастера
-				</a></div>
+				<div class="main__button">
+				<a href="form.html" class="main__link btn btn-primary">
+					Оформить заявку на выезд мастера*
+				</a>
+				<p>*Выезд мастера и диагностика бесплатно!</p>
+			</div>
 			</div>
 			<div class="col-lg-4 col-md-5 text-center">
 				<div class="main__button"><a href="comments.html" class="main__link btn btn-primary">
@@ -39,64 +44,87 @@
 		<div class="desc__main">
 			<div class="row desc__row">
 				<div class="col-6 col-sm-4 text-center">
-					<div class="desc__item">
+					<div class="desc__item" data-toggle="modal" data-target="#desc__item-1">
 						<svg viewBox="0 0 8 8" class="icon">
   						<use xlink:href="open-iconic.svg#monitor" class="icon-2"></use>
 						</svg>
 						<h5>Ремонт компьютеров</h5>
-						<p>Устранение неисправностей любой сложности.</p>
+						<p class="sm-none">Устранение неисправностей компьютера любой сложности.</p>
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 text-center">
-					<div class="desc__item">
+					<div class="desc__item" data-toggle="modal" data-target="#desc__item-2">
 						<svg viewBox="0 0 8 8" class="icon">
   						<use xlink:href="open-iconic.svg#laptop" class="icon-2"></use>
 						</svg>
-						<h5>Ремонт ноутбуков</h5>
-						<p>Восстановление работы ноутбука в кратчайшие сроки.</p>
+						<h5>Починка ноутбуков</h5>
+						<p class="sm-none">Восстановление работы ноутбука в кратчайшие сроки.</p>
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 text-center">
-					<div class="desc__item">
+					<div class="desc__item"  data-toggle="modal" data-target="#desc__item-3">
 						<svg viewBox="0 0 8 8" class="icon">
   						<use xlink:href="open-iconic.svg#spreadsheet" class="icon-2"></use>
 						</svg>
 						<h5>Установка Windows</h5>
-						<p>Установка операционной системы и сопутствующих программ.</p>
+						<p class="sm-none">Установка операционной системы и сопутствующих программ.</p>
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 text-center">
-					<div class="desc__item">
+					<div class="desc__item" data-toggle="modal" data-target="#desc__item-4">
 						<svg viewBox="0 0 8 8" class="icon">
   						<use xlink:href="open-iconic.svg#wifi" class="icon-2"></use>
 						</svg>
 					<h5>Настройка интернета</h5>
-					<p>Настройка wi-fi, подключение локальной сети.</p>
+					<p class="sm-none">Настройка wi-fi роутера, подключение локальной сети.</p>
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 text-center">
-					<div class="desc__item">
+					<div class="desc__item" data-toggle="modal" data-target="#desc__item-5">
 					<svg viewBox="0 0 8 8" class="icon">
   					<use xlink:href="open-iconic.svg#bug" class="icon-2"></use>
 					</svg>
 					<h5>Устранение вирусов</h5>
-					<p>Удаление вредоносных программ любого вида.</p>
+					<p class="sm-none">Удаление вредоносных программ любого вида.</p>
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4  text-center">
-					<div class="desc__item">
+					<div class="desc__item"  data-toggle="modal" data-target="#desc__item-6">
 					<svg viewBox="0 0 8 8" class="icon">
   					<use xlink:href="open-iconic.svg#hard-drive" class="icon-2"></use>
 					</svg>
 					<h5>Восстановление информации</h5>
-					<p>Восстановление инфомации с нерабочих жестких дисков.</p>
+					<p class="sm-none">Восстановление информации с нерабочих жестких дисков.</p>		
+						<div class="desc__overlay">
+    					<div class="desc__overlay-text">Узнать подробнее...</div>
+  						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
+
+<!-- ALL Modal -->
+<div id="modals"></div>
+
 	<footer id="footer">
 	</footer>
 </body>
-<script src="main.js?v=1.12"></script>	
+<script src="main.js?v=1.15"></script>	
 </html>
