@@ -5,15 +5,20 @@ $breakpoint-mobile: 480px;
   
 	.header__logo-img {
 		height: 100px;
-    	margin-bottom: 1.5em;
 	}	
 
 	.header__logo a{
 	align-items: center;
 	align-content: center;
-	justify-content: center;		
+	justify-content: flex-start;
+	margin-top: 10px;
 	}	
 
+	.header__logo-girl {
+		justify-content: flex-end;
+		margin-bottom: 10px;
+	}
+	
 	.header__number {
 	display: flex;
 	align-items: center;
@@ -36,6 +41,7 @@ $breakpoint-mobile: 480px;
 
 	.header__icon {
 	top: -100%;
+	right: -25%;
 	}
 
 	.main__button{
@@ -52,6 +58,7 @@ $breakpoint-mobile: 480px;
 	.md-none {
 	display: none;
 	}
+
 }
 
 @media (max-width: $breakpoint-mobile) {
@@ -78,10 +85,22 @@ $breakpoint-mobile: 480px;
 	}
 	}
 
+	.desc__item h5 {
+		font-size: 1rem;
+	}
+
 
 	.header__logo-img {
-	width: auto;
-	height: 100px;
+		width: auto;
+		height: 100px;
+	}
+
+	.header__logo a{
+	
+	}	
+
+	.header__logo-girl img {
+		width: 75%;
 	}
 
 	.sm-none {
@@ -91,4 +110,5 @@ $breakpoint-mobile: 480px;
 	.modal .modal-img {
 		width: 100%
 	}
+
 }

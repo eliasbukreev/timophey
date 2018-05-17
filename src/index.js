@@ -10,8 +10,9 @@ import './computer-repair.jpg';
 import './favicon.ico';
 import 'bootstrap/js/src/util';
 import 'bootstrap/js/src/modal';
-import './bodytest_apple.jpg';
+import './texture.png';
 import "./logo.png"
+import "./logo-background.png"
 
 //ModalImg
 import './modalCompRepair.jpg'

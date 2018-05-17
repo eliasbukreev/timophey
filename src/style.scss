@@ -24,13 +24,9 @@ $myActionColor: $cyan;
 
 .main__background {
   padding: 3em 0;
-  background-image: url(./bodytest_black.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  color: #20252d;
+  background-image: url(./texture.png);
+  background-repeat:repeat;
+  background-color: white;
 }
 
 .btn{
@@ -56,9 +52,6 @@ h1 {
 .main__button {
 	padding: 1.5em;
 	p{
-		color: white;
-		text-shadow: 1px 1px black;
-		font-weight: 600;
 		font-size: 1.1em;
 		padding-top: 10px;
 		float: right;
@@ -75,11 +68,28 @@ h1 {
 	text-transform: uppercase;
 }
 
+.header__logo-girl-box{
+	align-items: center;
+	justify-content: center;	
+}
 
-.header__logo {
-   a {
+.header__logo-girl{
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	img{
+		width: 50%;
+    	height: auto;
+    	display: inline-block;
+	}
+}
+
+.header__logo {
+	align-items: center;
+	justify-content: center;
+    a {
+	display: flex;
+
 	color: black;
 	}
 	a:hover{
@@ -98,12 +108,23 @@ h1 {
 	font-size: 2em;
 	font-weight: 400;
 	margin-bottom: 0px;
+	line-height: 0.9;
+	font-family: 'bebasNeueBold';
 	strong {
 		font-weight: 400;
 		font-size: 1.5em;
-		font-family: 'bebasNeueBold';
 	}
 }
+
+.header__text:after, .header__text:before {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    content: "";
+    background-color: #007bff;
+    width: 100%;
+    height: 2px;
+    display: block;
+    }
 
 .header__right {
 	display: flex;
@@ -113,7 +134,7 @@ h1 {
 
 .header__icon {
 	position: absolute;
-	left: -50px;
+	right: 25%;
 	top: -30%;
 	display: inline-block;
 	width: 50px;
@@ -168,7 +189,6 @@ b {
 	background-image: url(computer-repair.jpg);
 	background-size: cover;
 	background-position: bottom;
-	border-bottom: 1px white solid;
 }
 
 .subheader__text {
@@ -247,8 +267,6 @@ b {
 }
 
 .desc__head {
-	color: white;
-	text-shadow: 1px 1px black;
 }
 
 .desc__row {
@@ -256,6 +274,7 @@ b {
 }
 
 footer {
+	background-color: $light;
 	.row {
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -299,6 +318,8 @@ footer {
 	position: relative;
 	background-color: rgba(255,255,255, 0.9);
 	border-radius: 20px;
+	border: 1px $myActionColor solid;
+	height: 95%;
 	.desc__overlay {
   		position: absolute;
   		top: 0;
@@ -329,6 +350,9 @@ footer {
 }
 
 .modal {
+	background-image: url(./texture.png);
+    background-repeat:repeat;
+    background-color: white;
 	.close {
 		color: $blue;
 	}
