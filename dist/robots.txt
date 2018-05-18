@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /form/
+Disallow: /comments/
+Host: https://technocomp-vl.ru
+Sitemap: https://technocomp-vl.ru/sitemap.xml

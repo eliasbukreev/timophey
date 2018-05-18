@@ -17,11 +17,20 @@ module.exports = {
   	new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    filename: 'main.js?v=1.3',
+    filename: 'main.js?v=1.41',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
+     { test: /\.js$/, 
+       loader: "babel-loader",
+       include: [
+            path.resolve(__dirname, "src"),
+            path.resolve(__dirname, "app"),
+            path.resolve(__dirname, "dist"),
+            path.resolve(__dirname, "node_modules/bootstrap/js")
+          ]
+       },
        {
          test: /\.(scss)$/,
          use: [{

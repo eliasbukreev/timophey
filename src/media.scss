@@ -1,8 +1,28 @@
 $breakpoint-tablet: 768px;
+$breakpoint-xl-tablet: 991px;
 $breakpoint-mobile: 480px;
+$breakpoint-xs-mobile: 320px;
+
+@media (max-width: $breakpoint-xl-tablet) {
+	.header__logo {
+	margin-left: 28%;
+	}
+
+	.header__right{
+	margin-left: 50%;
+	}
+}
 
 @media (max-width: $breakpoint-tablet) {
   
+	.header__row{
+	padding-bottom: 0px; 
+	}
+
+	.header__logo {
+		margin-left: 25%;
+	}
+
 	.header__logo-img {
 		height: 100px;
 	}	
@@ -10,7 +30,7 @@ $breakpoint-mobile: 480px;
 	.header__logo a{
 	align-items: center;
 	align-content: center;
-	justify-content: flex-start;
+	justify-content: center;
 	margin-top: 10px;
 	}	
 
@@ -32,15 +52,15 @@ $breakpoint-mobile: 480px;
 
 	.header__right {
 	padding: 0px 0px;
+	margin-left: 25%;
 	}
 
-	.header__number-num {
-	line-height: 0.8;
-	margin: 10px 0px 10px 0px;
+	.header__right-md {
+
 	}
 
 	.header__icon {
-	top: -100%;
+	top: -50%;
 	right: -25%;
 	}
 
@@ -52,7 +72,7 @@ $breakpoint-mobile: 480px;
 	}
 
 	header {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	.md-none {
@@ -99,8 +119,16 @@ $breakpoint-mobile: 480px;
 	
 	}	
 
+	.header__logo-girl{
+		left: -5%;
+		bottom: 0px;
+	}
+
 	.header__logo-girl img {
-		width: 75%;
+	}
+
+	.header__number p {
+
 	}
 
 	.sm-none {
@@ -110,5 +138,16 @@ $breakpoint-mobile: 480px;
 	.modal .modal-img {
 		width: 100%
 	}
+
+}
+
+@media (max-width: $breakpoint-xs-mobile) {
+
+	.header__number-num-first {
+		font-size: 1em;
+		font-weight: 700; 
+	}
+
+
 
 }

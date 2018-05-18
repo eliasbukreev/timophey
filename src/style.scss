@@ -22,11 +22,14 @@
 $mySecondColor: $blue;
 $myActionColor: $cyan;
 
-.main__background {
-  padding: 3em 0;
+body {
   background-image: url(./texture.png);
   background-repeat:repeat;
   background-color: white;
+}
+
+.main__background {
+  padding: 3em 0;
 }
 
 .btn{
@@ -68,19 +71,18 @@ h1 {
 	text-transform: uppercase;
 }
 
-.header__logo-girl-box{
-	align-items: center;
-	justify-content: center;	
+
+.header__row{
+	position: relative;
 }
 
 .header__logo-girl{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
 	img{
-		width: 50%;
+		width: 65%;
     	height: auto;
-    	display: inline-block;
 	}
 }
 
@@ -126,6 +128,7 @@ h1 {
     display: block;
     }
 
+
 .header__right {
 	display: flex;
 	 align-items: center;
@@ -134,7 +137,7 @@ h1 {
 
 .header__icon {
 	position: absolute;
-	right: 25%;
+	right: 20%;
 	top: -30%;
 	display: inline-block;
 	width: 50px;
@@ -147,6 +150,10 @@ h1 {
 	font-weight: 600;
 	font-size: 0.9em; 
 	letter-spacing: 1px;
+	background-color: #33b5e5;
+    color: white;
+    border: 1px white solid;
+    padding: 10px;
 	}
 }
 
@@ -155,16 +162,17 @@ h1 {
 	display: flex;
 	font-weight: 600;
 	font-size: 1.2em; 
-	color: black;
 	letter-spacing: 2px;
+	text-decoration: underline;
+	color: #1a237e;
 }
 
 .header__number-num:first-of-type{
-
+	margin-top: 10px;
 }
 
 .header__number-num:last-of-type{
-
+	margin-bottom: 20px;
 	font-size: 1em;
 
 }
@@ -350,9 +358,6 @@ footer {
 }
 
 .modal {
-	background-image: url(./texture.png);
-    background-repeat:repeat;
-    background-color: white;
 	.close {
 		color: $blue;
 	}

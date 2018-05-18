@@ -1,3 +1,15 @@
+var materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+
+var materialsLength3 = materials.map(material => material.length);
+
+console.log(materialsLength3);
+
 import 'expose-loader?$!jquery';
 import 'expose-loader?jQuery!jquery';
 //import 'expose-loader?Util!bootstrap/js/dist/util';
@@ -11,16 +23,17 @@ import './favicon.ico';
 import 'bootstrap/js/src/util';
 import 'bootstrap/js/src/modal';
 import './texture.png';
-import "./logo.png"
-import "./logo-background.png"
+import "./logo.png";
+import "./logo-background.png";
+import "../node_modules/svgxuse/svgxuse.js";
 
 //ModalImg
-import './modalCompRepair.jpg'
-import './modalNoteRepair.jpg'
-import './modalWind.jpg'
-import './modalNet.jpg'
-import './modalBugs.jpg'
-import './modalHard.jpg'
+import './modalCompRepair.jpg';
+import './modalNoteRepair.jpg';
+import './modalWind.jpg';
+import './modalNet.jpg';
+import './modalBugs.jpg';
+import './modalHard.jpg';
 
 
 
@@ -33,16 +46,18 @@ jQuery(document).ready(function($){
 
 function HTMLReady (){
 $("#header").load("header.html");
+$("#header-2").load("header-2.html");
 $("#footer").load("footer.html");
 $("#modals").load("modals.html");
 };
 HTMLReady();
 
+});
 
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 
-    (function() {
+(function() {
   'use strict';
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -65,12 +80,9 @@ HTMLReady();
     $('#contact-form').on('submit', function (e) {
 
         // if the validator does not prevent form submit
-
-
-
        if ($('#contact-form')[0].checkValidity()) {
-
             var url = "contact.php";
+
             // POST values in the background the the script URL
             $.ajax({
                 type: "POST",
@@ -103,4 +115,3 @@ HTMLReady();
             return false;
         }
     });	
-});
